@@ -1,0 +1,29 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /demo
+#qiniu:
+#  ## 此处填写你自己的七牛云 access key
+#  accessKey:
+#  ## 此处填写你自己的七牛云 secret key
+#  secretKey:
+#  ## 此处填写你自己的七牛云 bucket
+#  bucket:
+#  ## 此处填写你自己的七牛云 域名
+#  prefix:
+
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      location: D:\image
+      file-size-threshold: 5MB
+      max-file-size: 20MB
+
+minio:
+  url: http://192.168.43.20:19966  # 缩进2个空格（与accessKey对齐）
+  accessKey: admin                # 同层级缩进一致
+  secretKey: myj040520
+  bucket-name: my-project
+
