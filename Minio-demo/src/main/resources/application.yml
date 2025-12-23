@@ -20,6 +20,11 @@ spring:
       location: D:\image
       file-size-threshold: 5MB
       max-file-size: 20MB
+  web:
+    resources:
+      static-locations: classpath:/static/,classpath:/public/,classpath:/resources/,classpath:/templates/
+  mvc:
+    static-path-pattern: /**  # 允许匹配所有静态资源路径（默认就是/**，可显式配置）
 
 minio:
   url: http://192.168.43.20:19966  # 缩进2个空格（与accessKey对齐）
