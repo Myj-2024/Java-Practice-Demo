@@ -1,3 +1,10 @@
+# 忽略IDEA配置目录
+.idea/
+# 忽略Maven/Gradle构建产物目录
+target/
+**/.idea/
+**/target/
+
 HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
