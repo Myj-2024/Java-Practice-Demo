@@ -1,7 +1,7 @@
 server:
   port: 8080
   servlet:
-    context-path: /demo
+    context-path: /demo  # 访问路径为localhost:8080/demo/...
 
 spring:
   servlet:
